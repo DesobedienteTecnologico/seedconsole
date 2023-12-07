@@ -1,0 +1,32 @@
+#!/bin/bash
+
+############################################################################################################################
+#
+# Script to automate the installation of fbcp for the ST7789V, RetroPie + configuration and GPIO buttons to act as keyboard
+# Desobediente Tecnologico www.desobedientetecnologico.com
+#
+############################################################################################################################
+
+# Build and install fbcp
+mkdir /home/pi/waveshare_fbcp/build
+cd /home/pi/waveshare_fbcp/build
+cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_1INCH3_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+make -j
+
+if [ -x "/usr/local/bin/fbcp" ]; then
+rm -rf /usr/local/bin/fbcp
+fi
+cp /home/pi/waveshare_fbcp/build/fbcp /usr/local/bin/fbcp
+
+# We don't delete the directory and the installator just in case, but we only rename it
+mv /home/pi/waveshare_fbcp /home/pi/waveshare_fbcp.bak
+mv /home/pi/install_fbcp /home/pi/install_fbcp.bak
+
+# Adafruit-Retrogame
+touch /etc/udev/rules.d/10-retrogame.rules
+echo "SUBSYSTEM=="input", ATTRS{name}=="retrogame", ENV{ID_INPUT_KEYBOARD}="1"" > /etc/udev/rules.d/10-retrogame.rules 
+cp /home/pi/Adafruit-Retrogame/retrogame /usr/local/bin/retrogame
+
+# Reboot the system
+sudo reboot
+
