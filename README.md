@@ -25,8 +25,12 @@ SeedConsole is a repository that contains all needed to get RetroPie working out
 
 SeedConsole IS NOT A FORK of RetroPie. The .img provided ONLY contains the setup configuration available in this repository.
 
+## 🪛 You can get SeedConsole in two ways
 
-## 🔖 Manual installation
+1. Flash the [released .img files](https://github.com/DesobedienteTecnologico/seedconsole/releases) onto the MicroSD
+2. Follow the manual installation you can find just below
+
+### 🔖 Manual installation
 1. Flash [Retropie](https://retropie.org.uk/download/) onto the MicroSD (min 4GB).
 2. Copy the contents of the **retropie_partition** directory from this repository to the **retropie** partition on the MicroSD.
 3. Do the same with the contents of **boot_partition** directory from this repository to the **boot** partition on the MicroSD.
