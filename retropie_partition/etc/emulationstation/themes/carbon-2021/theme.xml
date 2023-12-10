@@ -1,0 +1,384 @@
+<!--
+Theme: Carbon
+version: 2.5
+author: Tomas Jakobsson (Tomaz)
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon 2.4" by Eric Hettervik (Rookervik)
+originally based on: "simple" by nils bonenberger
+-->
+
+<theme>
+	<formatVersion>6</formatVersion>
+	<resolution>1920 1080</resolution>
+
+	<variables>
+		<colorRed>8b0000</colorRed>
+		<colorBlue>3082ce</colorBlue>
+		<colorGreen>50d62c</colorGreen>
+		<colorYellow>efbc0b</colorYellow>
+		<colorOrange>ef710b</colorOrange>
+		<colorPurple>ac0bef</colorPurple>
+		<colorTeal>04e9f7</colorTeal>
+		<colorPink>f50297</colorPink>
+		<themeColor>${colorRed}</themeColor>
+		<themeArtFolder>./art</themeArtFolder>
+		<themeFont>${themeArtFolder}/Cabin-Bold.ttf</themeFont>
+		<themeScrollSound>${themeArtFolder}/scroll.wav</themeScrollSound>
+		<themeGamelistFontSize>72</themeGamelistFontSize>
+	</variables>
+
+	<view name="system">
+		<image name="background" extra="true">
+			<path>${themeArtFolder}/carbon_fiber.png</path>
+			<tile>true</tile>
+			<size>1920 1080</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+		</image>
+
+		<image name="centerfade" extra="true">
+			<path>${themeArtFolder}/centerfade.png</path>
+			<size>1920 540</size>
+			<pos>960 540</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}50</color>
+		</image>
+
+		<image name="bottom" extra="true">
+			<path>${themeArtFolder}/bottom.png</path>
+			<size>1920 70</size>
+			<pos>0 1080</pos>
+			<origin>0 1</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<image name="logo">
+			<path>${themeArtFolder}/systems/${system.theme}.svg</path>
+		</image>
+
+		<text name="logoText">
+			<fontPath>${themeFont}</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<color>${themeColor}</color>
+		</text>
+
+		<image name="controller" extra="true">
+			<path>${themeArtFolder}/controllers/${system.theme}.svg</path>
+			<maxSize>1920 374</maxSize>
+			<pos>960 207</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<helpsystem name="help">
+			<iconColor>7d7d7d</iconColor>
+			<textColor>7d7d7d</textColor>
+		</helpsystem>
+	</view>
+
+	<!-- background -->
+	<view name="basic, detailed, video, grid">
+		<image name="background" extra="true">
+			<path>${themeArtFolder}/carbon_fiber.png</path>
+			<tile>true</tile>
+			<size>1920 1080</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+		</image>
+
+		<image name="top" extra="true">
+			<path>${themeArtFolder}/top.png</path>
+			<size>1920 174</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<image name="bottom" extra="true">
+			<path>${themeArtFolder}/bottom.png</path>
+			<size>1920 70</size>
+			<pos>0 1080</pos>
+			<origin>0 1</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<image name="logo">
+			<path>${themeArtFolder}/systems/${system.theme}.svg</path>
+			<maxSize>576 134</maxSize>
+			<pos>480 87</pos>
+			<origin>0.5 0.5</origin>
+		</image>
+
+		<text name="logoText">
+			<fontPath>${themeFont}</fontPath>
+			<fontSize>128</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>728 134</size>
+			<pos>20 20</pos>
+			<color>${themeColor}</color>
+		</text>
+	</view>
+
+	<!-- hide all metadata by default -->
+	<view name="basic, detailed, video, grid">
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_genre, md_genre, md_lbl_players, md_players, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_description, md_name">
+			<visible>false</visible>
+		</text>
+
+		<datetime name="md_releasedate, md_lastplayed">
+			<visible>false</visible>
+		</datetime>
+
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
+
+		<image name="md_thumbnail, md_image, md_marquee">
+			<visible>false</visible>
+		</image>
+
+		<video name="md_video">
+			<visible>false</visible>
+		</video>
+	</view>
+
+	<!-- basic -->
+	<view name="basic">
+		<image name="controller" extra="true">
+			<path>${themeArtFolder}/controllers/${system.theme}.svg</path>
+			<maxSize>576 134</maxSize>
+			<pos>1440 87</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<textlist name="gamelist">
+			<fontPath>${themeFont}</fontPath>
+			<fontSize>${themeGamelistFontSize}</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>1880 816</size>
+			<pos>20 184</pos>
+			<alignment>center</alignment>
+			<horizontalMargin>0</horizontalMargin>
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>${themeColor}</selectedColor>
+			<primaryColor>969696</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<scrollSound>${themeScrollSound}</scrollSound>
+		</textlist>
+	</view>
+
+	<!-- detailed, video -->
+	<view name="detailed, video">
+		<image name="controller" extra="true">
+			<path>${themeArtFolder}/controllers/${system.theme}.svg</path>
+			<maxSize>364 134</maxSize>
+			<pos>960 87</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<image name="shadow" extra="true">
+			<path>${themeArtFolder}/shadow.png</path>
+			<size>960 836</size>
+			<pos>1440 592</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<textlist name="gamelist">
+			<fontPath>${themeFont}</fontPath>
+			<fontSize>${themeGamelistFontSize}</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>920 816</size>
+			<pos>20 184</pos>
+			<alignment>left</alignment>
+			<horizontalMargin>0</horizontalMargin>
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>${themeColor}</selectedColor>
+			<primaryColor>969696</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<scrollSound>${themeScrollSound}</scrollSound>
+		</textlist>
+
+		<!-- setup metadata fields begin -->
+			<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+				<fontPath>${themeFont}</fontPath>
+				<fontSize>24</fontSize>
+				<forceUppercase>false</forceUppercase>
+				<size>0 32</size>
+				<color>${themeColor}</color>
+				<visible>true</visible>
+			</text>
+
+			<text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
+				<fontPath>${themeFont}</fontPath>
+				<fontSize>24</fontSize>
+				<forceUppercase>false</forceUppercase>
+				<size>280 32</size>
+				<color>969696</color>
+				<visible>true</visible>
+			</text>
+
+			<datetime name="md_releasedate, md_lastplayed">
+				<fontPath>${themeFont}</fontPath>
+				<fontSize>24</fontSize>
+				<forceUppercase>false</forceUppercase>
+				<size>0 32</size>
+				<color>969696</color>
+				<visible>true</visible>
+			</datetime>
+
+			<rating name="md_rating">
+				<size>0 24</size>
+				<visible>true</visible>
+			</rating>
+		<!-- setup metadata fields end -->
+
+		<!-- position metadata fields begin -->
+			<text name="md_lbl_releasedate">
+				<pos>980 594</pos>
+			</text>
+
+			<datetime name="md_releasedate">
+				<pos>1150 594</pos>
+			</datetime>
+
+			<text name="md_lbl_genre">
+				<pos>980 626</pos>
+			</text>
+
+			<text name="md_genre">
+				<pos>1150 626</pos>
+			</text>
+
+			<text name="md_lbl_developer">
+				<pos>980 658</pos>
+			</text>
+
+			<text name="md_developer">
+				<pos>1150 658</pos>
+			</text>
+
+			<text name="md_lbl_publisher">
+				<pos>980 690</pos>
+			</text>
+
+			<text name="md_publisher">
+				<pos>1150 690</pos>
+			</text>
+
+			<text name="md_lbl_rating">
+				<pos>1460 594</pos>
+			</text>
+
+			<rating name="md_rating">
+				<pos>1630 594</pos>
+			</rating>
+
+			<text name="md_lbl_players">
+				<pos>1460 626</pos>
+			</text>
+
+			<text name="md_players">
+				<pos>1630 626</pos>
+			</text>
+
+			<text name="md_lbl_lastplayed">
+				<pos>1460 658</pos>
+			</text>
+
+			<datetime name="md_lastplayed">
+				<pos>1630 658</pos>
+			</datetime>
+
+			<text name="md_lbl_playcount">
+				<pos>1460 690</pos>
+			</text>
+
+			<text name="md_playcount">
+				<pos>1630 690</pos>
+			</text>
+
+			<text name="md_description">
+				<size>920 268</size>
+				<pos>980 732</pos>
+			</text>
+		<!-- position metadata fields end -->
+
+		<image name="md_marquee">
+			<maxSize>576 134</maxSize>
+			<pos>1440 87</pos>
+			<origin>0.5 0.5</origin>
+			<visible>true</visible>
+		</image>
+	</view>
+
+	<!-- detailed -->
+	<view name="detailed">
+		<image name="md_image">
+			<maxSize>920 400</maxSize>
+			<pos>1440 384</pos>
+			<origin>0.5 0.5</origin>
+			<visible>true</visible>
+		</image>
+	</view>
+
+	<!-- video -->
+	<view name="video">
+		<video name="md_video">
+			<maxSize>920 400</maxSize>
+			<pos>1440 384</pos>
+			<origin>0.5 0.5</origin>
+			<delay>3</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<visible>true</visible>
+		</video>
+	</view>
+
+	<!-- grid -->
+	<view name="grid">
+		<image name="shadow" extra="true">
+			<path>${themeArtFolder}/shadow.png</path>
+			<size>1900 48</size>
+			<pos>10 962</pos>
+			<origin>0 0</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<imagegrid name="gamegrid">
+			<size>1920 786</size>
+			<pos>0 175</pos>
+			<margin>0 0</margin>
+			<scrollDirection>vertical</scrollDirection>
+			<animate>true</animate>
+		</imagegrid>
+
+		<gridtile name="default">
+			<size>320 262</size>
+			<padding>50 50</padding>
+			<imageColor>7f7f7fff</imageColor>
+			<backgroundColor>ffffff00</backgroundColor>
+		</gridtile>
+
+		<gridtile name="selected">
+			<size>320 262</size>
+			<padding>0 0</padding>
+			<imageColor>ffffffff</imageColor>
+			<backgroundColor>ffffff00</backgroundColor>
+		</gridtile>
+
+		<text name="md_name">
+			<fontPath>${themeFont}</fontPath>
+			<fontSize>${themeGamelistFontSize}</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>1900 48</size>
+			<pos>10 962</pos>
+			<alignment>center</alignment>
+			<color>969696</color>
+			<visible>true</visible>
+		</text>
+	</view>
+</theme>
+
