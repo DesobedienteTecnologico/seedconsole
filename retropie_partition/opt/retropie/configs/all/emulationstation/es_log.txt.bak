@@ -1,0 +1,42 @@
+Jan 28 02:38:52 lvl2: 	EmulationStation - v2.10.1rp, built Dec 26 2021 - 16:16:59
+Jan 28 02:38:52 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamenames.xml"...
+Jan 28 02:38:52 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamebioses.xml"...
+Jan 28 02:38:52 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamedevices.xml"...
+Jan 28 02:38:52 lvl2: 	Creating window...
+Jan 28 02:38:53 lvl2: 	Created window successfully.
+Jan 28 02:38:53 lvl2: 	GL vendor:   Broadcom
+Jan 28 02:38:53 lvl2: 	GL renderer: VideoCore IV HW
+Jan 28 02:38:53 lvl2: 	GL version:  OpenGL ES-CM 1.1
+Jan 28 02:38:53 lvl2: 	Checking available OpenGL extensions...
+Jan 28 02:38:53 lvl2: 	 ARB_texture_non_power_of_two: MISSING
+Jan 28 02:38:54 lvl2: 	Loading system config file /etc/emulationstation/es_systems.cfg...
+Jan 28 02:38:55 lvl1: 	System "amstradcpc" has no games! Ignoring it.
+Jan 28 02:38:56 lvl1: 	System "arcade" has no games! Ignoring it.
+Jan 28 02:38:56 lvl1: 	System "atari2600" has no games! Ignoring it.
+Jan 28 02:38:57 lvl1: 	System "atari5200" has no games! Ignoring it.
+Jan 28 02:38:57 lvl1: 	System "atari7800" has no games! Ignoring it.
+Jan 28 02:38:58 lvl1: 	System "atari800" has no games! Ignoring it.
+Jan 28 02:38:59 lvl1: 	System "atarilynx" has no games! Ignoring it.
+Jan 28 02:39:00 lvl1: 	System "fba" has no games! Ignoring it.
+Jan 28 02:39:00 lvl1: 	System "fds" has no games! Ignoring it.
+Jan 28 02:39:01 lvl1: 	System "gamegear" has no games! Ignoring it.
+Jan 28 02:39:02 lvl1: 	System "gb" has no games! Ignoring it.
+Jan 28 02:39:02 lvl1: 	System "gba" has no games! Ignoring it.
+Jan 28 02:39:03 lvl1: 	System "gbc" has no games! Ignoring it.
+Jan 28 02:39:04 lvl1: 	System "mame-libretro" has no games! Ignoring it.
+Jan 28 02:39:04 lvl1: 	System "mame-mame4all" has no games! Ignoring it.
+Jan 28 02:39:05 lvl1: 	System "mastersystem" has no games! Ignoring it.
+Jan 28 02:39:06 lvl1: 	System "megadrive" has no games! Ignoring it.
+Jan 28 02:39:06 lvl1: 	System "n64" has no games! Ignoring it.
+Jan 28 02:39:07 lvl1: 	System "neogeo" has no games! Ignoring it.
+Jan 28 02:39:08 lvl1: 	System "ngp" has no games! Ignoring it.
+Jan 28 02:39:09 lvl1: 	System "ngpc" has no games! Ignoring it.
+Jan 28 02:39:10 lvl1: 	System "pcengine" has no games! Ignoring it.
+Jan 28 02:39:11 lvl1: 	System "psx" has no games! Ignoring it.
+Jan 28 02:39:12 lvl2: 	Parsing XML file "/home/pi/.emulationstation/gamelists/retropie/gamelist.xml"...
+Jan 28 02:39:12 lvl1: 	System "sega32x" has no games! Ignoring it.
+Jan 28 02:39:13 lvl1: 	System "segacd" has no games! Ignoring it.
+Jan 28 02:39:14 lvl1: 	System "sg-1000" has no games! Ignoring it.
+Jan 28 02:39:14 lvl1: 	System "snes" has no games! Ignoring it.
+Jan 28 02:39:15 lvl1: 	System "vectrex" has no games! Ignoring it.
+Jan 28 02:39:16 lvl1: 	System "zxspectrum" has no games! Ignoring it.

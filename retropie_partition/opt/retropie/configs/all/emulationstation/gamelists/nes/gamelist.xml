@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Tetris.nes</path>
+		<name>Tetris</name>
+		<playcount>2</playcount>
+		<lastplayed>20220128T024211</lastplayed>
+	</game>
+</gameList>

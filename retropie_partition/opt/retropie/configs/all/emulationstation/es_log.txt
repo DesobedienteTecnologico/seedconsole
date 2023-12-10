@@ -1,0 +1,75 @@
+Jan 28 02:40:57 lvl2: 	EmulationStation - v2.10.1rp, built Dec 26 2021 - 16:16:59
+Jan 28 02:40:57 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamenames.xml"...
+Jan 28 02:40:58 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamebioses.xml"...
+Jan 28 02:40:58 lvl2: 	Parsing XML file "/opt/retropie/supplementary/emulationstation/resources/mamedevices.xml"...
+Jan 28 02:40:58 lvl2: 	Creating window...
+Jan 28 02:40:58 lvl2: 	Created window successfully.
+Jan 28 02:40:58 lvl2: 	GL vendor:   Broadcom
+Jan 28 02:40:58 lvl2: 	GL renderer: VideoCore IV HW
+Jan 28 02:40:58 lvl2: 	GL version:  OpenGL ES-CM 1.1
+Jan 28 02:40:58 lvl2: 	Checking available OpenGL extensions...
+Jan 28 02:40:58 lvl2: 	 ARB_texture_non_power_of_two: MISSING
+Jan 28 02:40:59 lvl2: 	Loading system config file /etc/emulationstation/es_systems.cfg...
+Jan 28 02:40:59 lvl1: 	System "amstradcpc" has no games! Ignoring it.
+Jan 28 02:40:59 lvl1: 	System "arcade" has no games! Ignoring it.
+Jan 28 02:41:00 lvl1: 	System "atari2600" has no games! Ignoring it.
+Jan 28 02:41:00 lvl1: 	System "atari5200" has no games! Ignoring it.
+Jan 28 02:41:00 lvl1: 	System "atari7800" has no games! Ignoring it.
+Jan 28 02:41:01 lvl1: 	System "atari800" has no games! Ignoring it.
+Jan 28 02:41:01 lvl1: 	System "atarilynx" has no games! Ignoring it.
+Jan 28 02:41:01 lvl1: 	System "fba" has no games! Ignoring it.
+Jan 28 02:41:02 lvl1: 	System "fds" has no games! Ignoring it.
+Jan 28 02:41:02 lvl1: 	System "gamegear" has no games! Ignoring it.
+Jan 28 02:41:02 lvl1: 	System "gb" has no games! Ignoring it.
+Jan 28 02:41:03 lvl1: 	System "gba" has no games! Ignoring it.
+Jan 28 02:41:03 lvl1: 	System "gbc" has no games! Ignoring it.
+Jan 28 02:41:03 lvl1: 	System "mame-libretro" has no games! Ignoring it.
+Jan 28 02:41:04 lvl1: 	System "mame-mame4all" has no games! Ignoring it.
+Jan 28 02:41:04 lvl1: 	System "mastersystem" has no games! Ignoring it.
+Jan 28 02:41:04 lvl1: 	System "megadrive" has no games! Ignoring it.
+Jan 28 02:41:05 lvl1: 	System "n64" has no games! Ignoring it.
+Jan 28 02:41:05 lvl1: 	System "neogeo" has no games! Ignoring it.
+Jan 28 02:41:06 lvl1: 	System "ngp" has no games! Ignoring it.
+Jan 28 02:41:06 lvl1: 	System "ngpc" has no games! Ignoring it.
+Jan 28 02:41:07 lvl1: 	System "pcengine" has no games! Ignoring it.
+Jan 28 02:41:07 lvl1: 	System "psx" has no games! Ignoring it.
+Jan 28 02:41:07 lvl2: 	Parsing XML file "/home/pi/.emulationstation/gamelists/retropie/gamelist.xml"...
+Jan 28 02:41:08 lvl1: 	System "sega32x" has no games! Ignoring it.
+Jan 28 02:41:08 lvl1: 	System "segacd" has no games! Ignoring it.
+Jan 28 02:41:08 lvl1: 	System "sg-1000" has no games! Ignoring it.
+Jan 28 02:41:09 lvl1: 	System "snes" has no games! Ignoring it.
+Jan 28 02:41:09 lvl1: 	System "vectrex" has no games! Ignoring it.
+Jan 28 02:41:09 lvl1: 	System "zxspectrum" has no games! Ignoring it.
+Jan 28 02:41:19 lvl2: 	 req sound [basic.launch]
+Jan 28 02:41:19 lvl2: 	   (missing)
+Jan 28 02:41:19 lvl0: 	AudioManager Error - Unable to open SDL audio: ALSA: Couldn't open audio device: No such file or directory
+
+Jan 28 02:41:20 lvl2: 	Attempting to launch game...
+Jan 28 02:41:20 lvl0: 	VolumeControl::init() - Failed to attach to default card!
+Jan 28 02:41:20 lvl2: 		/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ nes /home/pi/RetroPie/roms/nes/Tetris.nes
+Jan 28 02:41:44 lvl2: 	Creating window...
+Jan 28 02:41:44 lvl2: 	Created window successfully.
+Jan 28 02:41:44 lvl2: 	GL vendor:   Broadcom
+Jan 28 02:41:44 lvl2: 	GL renderer: VideoCore IV HW
+Jan 28 02:41:44 lvl2: 	GL version:  OpenGL ES-CM 1.1
+Jan 28 02:41:44 lvl2: 	Checking available OpenGL extensions...
+Jan 28 02:41:44 lvl2: 	 ARB_texture_non_power_of_two: MISSING
+Jan 28 02:41:44 lvl0: 	VolumeControl::init() - Failed to attach to default card!
+Jan 28 02:41:49 lvl2: 	 req sound [basic.launch]
+Jan 28 02:41:49 lvl2: 	   (missing)
+Jan 28 02:41:50 lvl2: 	Attempting to launch game...
+Jan 28 02:41:50 lvl0: 	AudioManager Error - Unable to open SDL audio: ALSA: Couldn't open audio device: No such file or directory
+
+Jan 28 02:41:50 lvl2: 		/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ nes /home/pi/RetroPie/roms/nes/Tetris.nes
+Jan 28 02:42:10 lvl2: 	Creating window...
+Jan 28 02:42:11 lvl2: 	Created window successfully.
+Jan 28 02:42:11 lvl2: 	GL vendor:   Broadcom
+Jan 28 02:42:11 lvl2: 	GL renderer: VideoCore IV HW
+Jan 28 02:42:11 lvl2: 	GL version:  OpenGL ES-CM 1.1
+Jan 28 02:42:11 lvl2: 	Checking available OpenGL extensions...
+Jan 28 02:42:11 lvl2: 	 ARB_texture_non_power_of_two: MISSING
+Jan 28 02:42:11 lvl0: 	VolumeControl::init() - Failed to attach to default card!
+Jan 28 02:42:17 lvl2: 	Added/Updated 1 entities in '/etc/emulationstation/gamelists/nes/gamelist.xml'
+Jan 28 02:42:17 lvl2: 	Saved gamelist.xml for system "nes" in 1 ms
+Jan 28 02:42:17 lvl2: 	Shutting system down
+Jan 28 02:42:18 lvl2: 	EmulationStation cleanly shutting down.
