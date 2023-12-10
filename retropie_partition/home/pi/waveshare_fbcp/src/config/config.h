@@ -146,7 +146,7 @@
 
 // Detects when the activity on the screen is mostly idle, and goes to low power mode, in which new
 // frames will be polled first at 10fps, and ultimately at only 2fps.
-#define SAVE_BATTERY_BY_SLEEPING_WHEN_IDLE
+//#define SAVE_BATTERY_BY_SLEEPING_WHEN_IDLE
 
 // Builds a histogram of observed frame intervals and uses that to sync to a known update rate. This aims
 // to detect if an application uses a non-60Hz update rate, and synchronizes to that instead.
@@ -209,7 +209,7 @@
 #define KEYBOARD_INPUT_FILE "/dev/input/event1"
 
 // If enabled, the display backlight will be turned off after this many usecs of no activity on screen.
-#define TURN_DISPLAY_OFF_AFTER_USECS_OF_INACTIVITY (1 * 60 * 1000000)
+//#define TURN_DISPLAY_OFF_AFTER_USECS_OF_INACTIVITY (1 * 60 * 1000000)
 
 #endif
 
@@ -226,7 +226,7 @@
 // If less than this much % of the screen changes per frame, the screen is considered to be inactive, and
 // the display backlight can automatically turn off, if TURN_DISPLAY_OFF_AFTER_USECS_OF_INACTIVITY is 
 // defined.
-#define DISPLAY_CONSIDERED_INACTIVE_PERCENTAGE (5.0 / 100.0)
+//#define DISPLAY_CONSIDERED_INACTIVE_PERCENTAGE (5.0 / 100.0)
 
 #ifndef KERNEL_MODULE
 
