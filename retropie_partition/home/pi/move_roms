@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Move .gb files
+find /boot/roms/gb -type f -name "*.gb" -exec mv {} /home/pi/RetroPie/roms/gb/ \;
+
+# Move .gba files
+find /boot/roms/gba -type f -name "*.gba" -exec mv {} /home/pi/RetroPie/roms/gba/ \;
+
+echo "Files moved successfully."
