@@ -7,6 +7,9 @@
   <a href="https://opensource.org/license/gpl-3-0/" title="License: GPLv3">
     <img src="https://img.shields.io/badge/License-GPLv3-red">
   </a>
+  <a href="[https://twitter.com/DesobedienteTec](https://nostr.com/npub1dtmp3wrkyqafghjgwyk88mxvulfncc9lg6ppv4laet5cun66jtwqqpgte6)" title="Nostr">
+  <img src="https://img.shields.io/badge/%E2%9C%89%EF%B8%8F-Nostr-purple">
+  </a>
   <a href="https://twitter.com/DesobedienteTec" title="Twitter">
   <img src="https://img.shields.io/twitter/follow/DesobedienteTecnologico?style=social">
   </a>
@@ -35,13 +38,13 @@ SeedConsole IS NOT A FORK of RetroPie. The .img provided ONLY contains the setup
 2. Copy the contents of the **retropie_partition** directory from this repository to the **retropie** partition on the MicroSD.
 3. Do the same with the contents of **boot_partition** directory from this repository to the **boot** partition on the MicroSD.
 4. Insert the MicroSD into the Raspberry Pi and power it on. The first boot will take ~4min. Do not be desperate, just wait 😁.
-5. Enjoy! 🤗 
+5. Enjoy! 🤗
 
 
 💡 You have to be root to do the first step correctly. Be smart, and launch your file browser with elevated privileges using sudo just for that. :)
 
 ### 📥 Add new games
-1. You have to get[ROMs/Games](https://t.me/desobedientestecnologicos/1694/1696) and place them in **/home/pi/RetroPie/roms**. Is under **retropie** partition on the MicroSD.
+1. You have to get [ROMs/Games](https://t.me/desobedientestecnologicos/1694/1696) and place them in **/home/pi/RetroPie/roms**. Is under **retropie** partition on the MicroSD.
 
 ### ⚠️ Windows & MacOS users
 The Retropie partition on the MicroSD card uses the ext4 filesystem, which is not readable by default as the boot partition type (fat32).
