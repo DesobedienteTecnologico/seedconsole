@@ -21,4 +21,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 @reboot root bash /home/pi/install_fbcp
 @reboot root retrogame &
+@reboot root bash /home/pi/move_roms
 #
