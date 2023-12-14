@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="SeedConsole" src="img/sc_logo.png" width="200"/>
+    <img alt="SeedConsole" src="https://repository-images.githubusercontent.com/728836080/6b77f0be-3e4a-4767-bbf9-b94c3807ebee" width="200"/>
 </p>
 <h1 align="center">SeedConsole</h1>
 
@@ -7,63 +7,54 @@
   <a href="https://opensource.org/license/gpl-3-0/" title="License: GPLv3">
     <img src="https://img.shields.io/badge/License-GPLv3-red">
   </a>
-  <a href="[https://twitter.com/DesobedienteTec](https://nostr.com/npub1dtmp3wrkyqafghjgwyk88mxvulfncc9lg6ppv4laet5cun66jtwqqpgte6)" title="Nostr">
+  <a href="https://nostr.com/npub1dtmp3wrkyqafghjgwyk88mxvulfncc9lg6ppv4laet5cun66jtwqqpgte6" title="Nostr">
   <img src="https://img.shields.io/badge/%E2%9C%89%EF%B8%8F-Nostr-purple">
   </a>
-  <a href="https://twitter.com/DesobedienteTec" title="Twitter">
-  <img src="https://img.shields.io/twitter/follow/DesobedienteTecnologico?style=social">
+<a href="https://t.me/DesobedientesTecnologicos" title="Telegram">
+  <img src="https://img.shields.io/badge/📨-Telegram-blue">
   </a>
-  <a href="lnurlp:dt@getalby.com" title="Lightning">
-  <img src="https://img.shields.io/badge/%E2%9A%A1-dt%40getalby.com-orange">
+  <a href="https://twitter.com/DesobedienteTec" title="Twitter">
+  <img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2FDesobedienteTec&label=Follow">
   </a>
   <a href="http://btcpay.desobedientetecnologico.com/" title="Bitcoin / BIP47">
-  <img src="https://img.shields.io/badge/%20%F0%9F%A5%B7-btcpay.desobedientetecnologico.com-yellow?logo=bitcoin">
+  <img src="https://img.shields.io/badge/⚡️-btcpay-yellow?logo=bitcoin">
   </a>
   
 </p>
 
-# ℹ️ About
+# About
 
-SeedConsole is a repository that contains all needed to get RetroPie working out of the box with the RPi HAT 240x240 display ST7789V with buttons.
+SeedConsole is a repository that contains everything needed to get RetroPie working out of the box for Raspberry Pi devices equipped with an RPi HAT 240x240 display (ST7789V) along with buttons.
 
-SeedConsole IS NOT A FORK of RetroPie. The .img provided ONLY contains the setup configuration available in this repository.
+SeedConsole is not intended to be a fork of RetroPie. The provided .img file only includes the setup configuration available in this repository.
 
-## 🪛 You can get SeedConsole in two ways
+## You can get SeedConsole in two ways
 
-1. Flash the [released .img files](https://github.com/DesobedienteTecnologico/seedconsole/releases) onto the MicroSD
-2. Follow the manual installation you can find just below
+In both cases, you need to wait about 5 minutes to get everything setup at first boot.
 
-### 🔖 Manual installation
+1. Flash the [released .img files](https://github.com/DesobedienteTecnologico/seedconsole/releases) onto the MicroSD.
+3. Follow the manual installation you can find just below.
+
+
+### Manual installation
 1. Flash [Retropie](https://retropie.org.uk/download/) onto the MicroSD (min 4GB).
 2. Copy the contents of the **retropie_partition** directory from this repository to the **retropie** partition on the MicroSD.
 3. Do the same with the contents of **boot_partition** directory from this repository to the **boot** partition on the MicroSD.
-4. Insert the MicroSD into the Raspberry Pi and power it on. The first boot will take ~4min. Do not be desperate, just wait 😁.
-5. Enjoy! 🤗
+4. Insert the MicroSD into the Raspberry Pi and power it on.
 
 
 💡 You have to be root to do the first step correctly. Be smart, and launch your file browser with elevated privileges using sudo just for that. :)
 
-### 📥 Add new games
-1. You have to get [ROMs/Games](https://t.me/desobedientestecnologicos/1694/1696) and place them in **/home/pi/RetroPie/roms**. Is under **retropie** partition on the MicroSD.
+## What is included in the released images files?
+The released images files contains all the configuration available in this repository which includes [127 open source games](https://github.com/DesobedienteTecnologico/seedconsole/pull/3) .
 
-### ⚠️ Windows & MacOS users
-The Retropie partition on the MicroSD card uses the ext4 filesystem, which is not readable by default as the boot partition type (fat32).
-To mount that partition and be able to place games into it actually you have to install this software:
+### Add new games
 
-- Windows users:
-    - [ext2fsd](https://sourceforge.net/projects/ext2fsd/)
+This HAT has only 3 buttons on the right (A,B and Start) and 5 on the left (Up, Down, Left, Right and Select). So, it has the same configuration as the Game Boy, NES, Sega Master system, Game Gear, Atari 2600 and Atari 7800.
+1. Insert the MicroSD into your computer, go unter **boot** partition and add your [ROMs/Games](https://t.me/desobedientestecnologicos/1694/1696) under **roms/** correspondingly.
 
-- MacOS users:
-    - [extFS](https://www.paragon-software.com/home/extfs-mac) 
 
----
+### Keymap
+<img alt="Keymap" src="https://github.com/DesobedienteTecnologico/seedconsole/assets/52879067/33609f8e-0f8f-4346-a667-b754f9bc034e" width="500"/>
 
-#### 🗂️ Sources
-
-- https://www.waveshare.com/wiki/1.3inch_LCD_HAT
-- https://github.com/adafruit/Adafruit-Retrogame
-- https://retropie.org.uk/download/
-
----
-
-[📨 Telegram Group](https://t.me/DesobedientesTecnologicos)
+ℹ️ Press Start + Select to navigate to the main menu.
