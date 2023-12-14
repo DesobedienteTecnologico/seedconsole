@@ -1,9 +1,14 @@
 #!/bin/bash
 
-# Move .gb files
-find /boot/roms/gb -type f -name "*.gb" -exec mv {} /home/pi/RetroPie/roms/gb/ \;
+# Array of directories
+directories=("amstradcpc" "arcade" "atari2600" "atari5200" "atari7800" "atari800" "atarilynx" "fba" "fds" "gamegear" "gb" "gba" "gbc" "genesis" "mame-libretro" "mame-mame4all" "mastersystem" "megadrive" "n64" "neogeo" "nes" "ngp" "ngpc" "pcengine" "psx" "sega32x" "segacd" "sg-1000" "snes" "vectrex" "zxspectrum")
 
-# Move .gba files
-find /boot/roms/gba -type f -name "*.gba" -exec mv {} /home/pi/RetroPie/roms/gba/ \;
+# Move files for each directory
+for dir in "${directories[@]}"; do
+    source_dir="/boot/roms/${dir}"
+    target_dir="/home/pi/RetroPie/roms/${dir}"
+    
+    find "${source_dir}" -type f -exec mv {} "${target_dir}/" \;
+done
 
 echo "Files moved successfully."
