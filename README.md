@@ -45,6 +45,20 @@ In both cases, you need to wait about 5 minutes to get everything setup at first
 
 💡 You have to be root to do the first step correctly. Be smart, and launch your file browser with elevated privileges using sudo just for that. :)
 
+<details>
+     <summary>⚠️ Windows & MacOS users ⚠️</summary>
+
+The Retropie partition on the MicroSD card uses the ext4 filesystem, which is not readable by default as the boot partition type (fat32).
+To mount that partition and be able to place games into it actually you have to install this software:
+
+- Windows users:
+    - [ext2fsd](https://sourceforge.net/projects/ext2fsd/)
+
+- MacOS users:
+    - [extFS](https://www.paragon-software.com/home/extfs-mac) 
+
+</details>
+
 ## What is included in the released images files?
 The released images files contains all the configuration available in this repository which includes [127 open source games](https://github.com/DesobedienteTecnologico/seedconsole/pull/3) .
 
@@ -55,6 +69,6 @@ This HAT has only 3 buttons on the right (A,B and Start) and 5 on the left (Up, 
 
 
 ### Keymap
-<img alt="Keymap" src="https://github.com/DesobedienteTecnologico/seedconsole/assets/52879067/33609f8e-0f8f-4346-a667-b754f9bc034e" width="500"/>
+<img alt="Keymap" src="https://github.com/DesobedienteTecnologico/seedconsole/assets/52879067/f3477c3f-3840-4707-88b9-6b7a28c234c0" width="500"/>
 
 ℹ️ Press Start + Select to navigate to the main menu.
