@@ -28,6 +28,8 @@
     #include "waveshare_1inch14_lcd.h"
 #elif defined(WAVESHARE_2INCH_LCD)
     #include "waveshare_2inch_lcd.h"
+#elif defined(WAVESHARE_ST7789_320X240)
+    #include "waveshare_st7789_320x240.h"
 #elif defined(ST7789) || defined(ST7789VW)
     #if !(defined(DISPLAY_NATIVE_WIDTH)|defined(DISPLAY_NATIVE_HEIGHT))
     #define DISPLAY_NATIVE_WIDTH 240
@@ -43,6 +45,8 @@
     #include "waveshare_1inch14_lcd.h"
 #elif defined(WAVESHARE_2INCH_LCD)
     #include "waveshare_2inch_lcd.h"
+#elif defined(WAVESHARE_ST7789_320X240)
+    #include "waveshare_st7789_320x240.h"
 #endif
 
 

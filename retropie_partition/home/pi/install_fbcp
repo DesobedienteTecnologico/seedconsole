@@ -10,7 +10,7 @@
 # Build and install fbcp
 mkdir /home/pi/waveshare_fbcp/build
 cd /home/pi/waveshare_fbcp/build
-cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_1INCH3_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_ST7789_320X240=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
 make -j
 
 if [ -x "/usr/local/bin/fbcp" ]; then

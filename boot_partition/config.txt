@@ -70,7 +70,7 @@ overscan_scale=1
 
 
 hdmi_force_hotplug=1
-hdmi_cvt=240 240 60 1 0 0 0
+hdmi_cvt=320 240 60 1 0 0 0
 hdmi_group=2
 hdmi_mode=1
 hdmi_mode=87
